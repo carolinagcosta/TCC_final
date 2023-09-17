@@ -1,0 +1,1707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+<link href="lib/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+</head>
+<body>
+<table class="table table-striped" style="font-size: 22px; width: auto !important; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:right;"> ID </th>
+   <th style="text-align:right;"> Turma </th>
+   <th style="text-align:right;"> Nota_defesa </th>
+   <th style="text-align:right;"> CR </th>
+   <th style="text-align:left;"> Categoria </th>
+   <th style="text-align:left;"> Cidade_origem </th>
+   <th style="text-align:left;"> Estado_origem </th>
+   <th style="text-align:left;"> Linha_pesquisa </th>
+   <th style="text-align:left;"> Trancamento </th>
+   <th style="text-align:left;"> Prorrogacao </th>
+   <th style="text-align:left;"> Instituicao </th>
+   <th style="text-align:left;"> Experiencia </th>
+   <th style="text-align:left;"> Genero </th>
+   <th style="text-align:left;"> Coorientador </th>
+   <th style="text-align:left;"> Curso_graduacao </th>
+   <th style="text-align:left;"> Universidade_graduacao </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 2017201019 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 7.96 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Biotecnologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201010 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.50 </td>
+   <td style="text-align:right;"> 9.08 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia ambiental </td>
+   <td style="text-align:left;"> IESAM </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017101005 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.29 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Sao Luis </td>
+   <td style="text-align:left;"> MA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Direito </td>
+   <td style="text-align:left;"> UNICEUMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201015 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia de Minas e Meio Ambiente </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017101001 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.80 </td>
+   <td style="text-align:right;"> 9.37 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Agricola e Ambiental </td>
+   <td style="text-align:left;"> UFV </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017101006 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.54 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Canaa dos Carajas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFC </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201007 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.80 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Sanitaria </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201014 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 7.40 </td>
+   <td style="text-align:right;"> 8.26 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Zootecnia </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201008 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 7.50 </td>
+   <td style="text-align:right;"> 8.05 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Salvaterra </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201006 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.34 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Acailandia </td>
+   <td style="text-align:left;"> MA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UFT </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017101002 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.80 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Contabeis </td>
+   <td style="text-align:left;"> UNICEUMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017101007 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.01 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Canaa dos Carajas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Civil </td>
+   <td style="text-align:left;"> FACI </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201002 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 7.80 </td>
+   <td style="text-align:right;"> 8.70 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201020 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.70 </td>
+   <td style="text-align:right;"> 8.30 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Analise e Desenvolvimento de Sistemas </td>
+   <td style="text-align:left;"> IFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201009 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.90 </td>
+   <td style="text-align:right;"> 9.07 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201005 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.70 </td>
+   <td style="text-align:right;"> 8.99 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> Estacio </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201012 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.44 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017101004 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.15 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201013 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 8.90 </td>
+   <td style="text-align:right;"> 8.75 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geografia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2017201011 </td>
+   <td style="text-align:right;"> 2017 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.55 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Biotecnologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201020 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 9.37 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201013 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.90 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201010 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Castanhal </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Meteorologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101003 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.20 </td>
+   <td style="text-align:right;"> 8.83 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belo Horizonte </td>
+   <td style="text-align:left;"> MG </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UNESP </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201011 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.20 </td>
+   <td style="text-align:right;"> 8.56 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Castanhal </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Biotecnologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101009 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.10 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belo Horizonte </td>
+   <td style="text-align:left;"> MG </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Civil </td>
+   <td style="text-align:left;"> FUMEC </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201008 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 9.10 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Castanhal </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201015 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.93 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Agronomia </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201002 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.81 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101008 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 9.10 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UNISA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201016 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.93 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia de Controle e Automacao </td>
+   <td style="text-align:left;"> Estacio </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201017 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 7.30 </td>
+   <td style="text-align:right;"> 8.93 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201001 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.33 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Biomedicina </td>
+   <td style="text-align:left;"> FAMAZ </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101013 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> CUSC </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201012 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.26 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201004 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 9.03 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201003 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 7.82 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Biotecnologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101007 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.66 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Sao Luis </td>
+   <td style="text-align:left;"> MA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Direito </td>
+   <td style="text-align:left;"> UNICEUMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201018 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.10 </td>
+   <td style="text-align:right;"> 8.72 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geografia </td>
+   <td style="text-align:left;"> CUFSA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101012 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 9.22 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Agronomia </td>
+   <td style="text-align:left;"> UFV </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101006 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.81 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018101002 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.20 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Eletrica </td>
+   <td style="text-align:left;"> UPE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2018201009 </td>
+   <td style="text-align:right;"> 2018 </td>
+   <td style="text-align:right;"> 9.40 </td>
+   <td style="text-align:right;"> 9.28 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> IFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019201003 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.80 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Energias Renovaveis </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019201002 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 10.00 </td>
+   <td style="text-align:right;"> 8.93 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Biotecnologia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301007 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.80 </td>
+   <td style="text-align:right;"> 8.43 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Capanema </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Pedagogia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301004 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.50 </td>
+   <td style="text-align:right;"> 9.32 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101007 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 8.30 </td>
+   <td style="text-align:right;"> 9.07 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Vitoria </td>
+   <td style="text-align:left;"> ES </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Arquitetura e Urbanismo </td>
+   <td style="text-align:left;"> UNESP </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101008 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 8.90 </td>
+   <td style="text-align:right;"> 8.99 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Sao Luis </td>
+   <td style="text-align:left;"> MA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Administracao de Empresas </td>
+   <td style="text-align:left;"> UECE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101006 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 8.27 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Administracao </td>
+   <td style="text-align:left;"> UNAMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301008 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.70 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Relacões Internacionais </td>
+   <td style="text-align:left;"> UNAMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301003 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 9.11 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301006 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.80 </td>
+   <td style="text-align:right;"> 9.54 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Castanhal </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Agronomia </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019201008 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.10 </td>
+   <td style="text-align:right;"> 8.83 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101012 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.74 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belo Horizonte </td>
+   <td style="text-align:left;"> MG </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> PUC MINAS </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101002 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.20 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Canaa dos Carajas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101001 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.20 </td>
+   <td style="text-align:right;"> 9.01 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Canaa dos Carajas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UNICSUL </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019201009 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Sanitaria </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101010 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 8.70 </td>
+   <td style="text-align:right;"> 8.19 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Direito </td>
+   <td style="text-align:left;"> UNAMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301001 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.44 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Agronomia </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301005 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.50 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019101003 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.71 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Canaa dos Carajas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Quimica </td>
+   <td style="text-align:left;"> UFRRJ </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019201004 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.60 </td>
+   <td style="text-align:right;"> 9.03 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Quimica </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019301010 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.40 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia de Pesca </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2019201013 </td>
+   <td style="text-align:right;"> 2019 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.26 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Marituba </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> Estacio </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301007 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 7.50 </td>
+   <td style="text-align:right;"> 8.49 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> Estacio </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301022 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.87 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020101001 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.20 </td>
+   <td style="text-align:right;"> 8.92 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Quimica </td>
+   <td style="text-align:left;"> UFJF </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301005 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 8.74 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Energias Renovaveis </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020101006 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.25 </td>
+   <td style="text-align:right;"> 9.37 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belo Horizonte </td>
+   <td style="text-align:left;"> MG </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geografia </td>
+   <td style="text-align:left;"> PUC MINAS </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020101002 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.10 </td>
+   <td style="text-align:right;"> 8.91 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UNISA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301008 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 9.24 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Sao Miguel do Guama </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301020 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:right;"> 9.01 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Economia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301002 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 8.20 </td>
+   <td style="text-align:right;"> 8.13 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020201002 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 8.70 </td>
+   <td style="text-align:right;"> 8.62 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Administracao </td>
+   <td style="text-align:left;"> UNAMA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301004 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.70 </td>
+   <td style="text-align:right;"> 8.86 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020201001 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.78 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental </td>
+   <td style="text-align:left;"> UEPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301006 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.50 </td>
+   <td style="text-align:right;"> 9.24 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301012 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 9.19 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301017 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.13 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301009 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.80 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Vila dos Cabanos </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Tecnologia em Saneamento Ambiental </td>
+   <td style="text-align:left;"> IFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301019 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 8.00 </td>
+   <td style="text-align:right;"> 8.75 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020101007 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.09 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRRJ </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020101005 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 8.23 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Parauapebas </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UFRN </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2020301013 </td>
+   <td style="text-align:right;"> 2020 </td>
+   <td style="text-align:right;"> 9.30 </td>
+   <td style="text-align:right;"> 9.34 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Engenharia Florestal </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021101002 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.61 </td>
+   <td style="text-align:left;"> Vale </td>
+   <td style="text-align:left;"> Belo Horizonte </td>
+   <td style="text-align:left;"> MG </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geologia </td>
+   <td style="text-align:left;"> UNESP </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021201002 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.13 </td>
+   <td style="text-align:left;"> Demanda Social </td>
+   <td style="text-align:left;"> Sao Paulo </td>
+   <td style="text-align:left;"> SP </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> privada </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UNINOVE </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021201004 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 9.00 </td>
+   <td style="text-align:right;"> 9.23 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Maraba </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> Ciencias Biologicas </td>
+   <td style="text-align:left;"> UNIFESSPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021201011 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 9.40 </td>
+   <td style="text-align:right;"> 8.50 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Ananindeua </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Socioeconomia e Sustentabilidade na Mineracao </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Energias Renovaveis </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021201008 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 7.00 </td>
+   <td style="text-align:right;"> 8.87 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Geografia </td>
+   <td style="text-align:left;"> UFPA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021201007 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 7.00 </td>
+   <td style="text-align:right;"> 8.04 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Energias Renovaveis </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+  <tr>
+   <td style="text-align:right;"> 2021201005 </td>
+   <td style="text-align:right;"> 2021 </td>
+   <td style="text-align:right;"> 9.70 </td>
+   <td style="text-align:right;"> 8.83 </td>
+   <td style="text-align:left;"> Res Para </td>
+   <td style="text-align:left;"> Belem </td>
+   <td style="text-align:left;"> PA </td>
+   <td style="text-align:left;"> Uso Sustentavel dos Recursos Biologicos </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> publica </td>
+   <td style="text-align:left;"> S </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> Engenharia Ambiental e Energias Renovaveis </td>
+   <td style="text-align:left;"> UFRA </td>
+  </tr>
+</tbody>
+</table> <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})</script><script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
